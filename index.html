@@ -45,6 +45,35 @@
         </div>
       </header>
 
+      <!-- Add Task Button -->
+      <button id="open-modal-btn" class="add-task-btn">
+        <span>+ Add Task</span>
+      </button>
+
+      <!-- Add Task Modal -->
+      <div id="task-modal" class="modal hidden">
+        <div class="modal-content">
+          <span id="close-modal" class="close-button">&times;</span>
+          <h2>Add New Task</h2>
+          <form id="task-form">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required />
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <label for="status">Status:</label>
+            <select id="status" name="status" required>
+              <option value="todo">To Do</option>
+              <option value="doing">Doing</option>
+              <option value="done">Done</option>
+            </select>
+
+            <button type="submit">Add Task</button>
+          </form>
+        </div>
+      </div>
+      
       <div class="container">
         <main class="card-column-main">
           <!-- Task Columns: Display tasks grouped by status (TODO, DOING, DONE). -->
@@ -86,37 +115,7 @@
             </div>
               <!-- Navigation sidebar unchanged… -->
 
-<!-- Add Task Button -->
-<button id="open-modal-btn" class="add-task-btn">+ Add Task</button>
 
-<!-- Add Task Modal -->
-<div id="task-modal" class="modal hidden">
-  <div class="modal-content">
-    <span id="close-modal" class="close-button">&times;</span>
-    <h2>Add New Task</h2>
-    <form id="task-form">
-      <label for="title">Title:</label>
-      <input type="text" id="title" name="title" required />
-
-      <label for="description">Description:</label>
-      <textarea id="description" name="description" rows="4" required></textarea>
-
-      <label for="status">Status:</label>
-      <select id="status" name="status" required>
-        <option value="todo">To Do</option>
-        <option value="doing">Doing</option>
-        <option value="done">Done</option>
-      </select>
-
-      <button type="submit">Add Task</button>
-    </form>
-  </div>
-</div>
-<button id="open-modal-btn" class="add-task-btn"><span>+ Add Task</span></button>
-          </div>
-        </main>
-      </div>
-    </div>
          <script src="script.js"></script>
   </body>
 </html>
