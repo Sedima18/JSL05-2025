@@ -42,3 +42,35 @@ In this project, you will implement a task management system where **tasks are p
 ## Expected Outcome
 
 A fully functional task management system where tasks are dynamically loaded from **local storage**, tasks can be **added through a modal**, and the application **remains consistent** after refreshing the page. The code will be modular, well-documented, and easy to maintain, following best practices for JavaScript development.
+
+## Features
+
+-📌 Add new tasks with title, description, and status
+-🗃 Tasks automatically saved and loaded from localStorage
+-📂 Columns: "To Do", "Doing", "Done"
+-🧩 Modular JavaScript structure
+-📱 Fully responsive layout and modal behavior
+
+## Technologies Used
+
+Tech	
+HTML5- 	Structure and layout
+CSS3	-Styling and responsive UI
+JavaScript-	Task logic & localStorage
+LocalStorage-	Data persistence
+Figma	-  UI design guide
+
+## Usage Example
+ 
+Clone or download the project:
+
+Click the + Add Task button in the top-right corner.
+Fill in the task details in the modal:
+Title
+Description
+Status (To Do, Doing, Done)
+Submit the form. The task will appear in the correct column and persist in localStorage.
+Refresh the page — your tasks will remain.
+
+
+
