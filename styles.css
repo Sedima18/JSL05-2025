@@ -449,6 +449,123 @@ form select {
   display: none;
 }
 
+/* Add Task Button — Top Right of Page */
+#open-modal-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #635fc7;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+#open-modal-btn:hover {
+  background-color: #5a55c2;
+}
+
+/* Modal container */
+.modal {
+  position: fixed;
+  top: 70px; /* Push below the button */
+  right: 20px;
+  z-index: 999;
+  background-color: #fff;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Hide modal by default */
+.hidden {
+  display: none;
+}
+
+/* Modal content layout */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+/* Form elements */
+.modal-content input,
+.modal-content textarea,
+.modal-content select,
+.modal-content button[type="submit"] {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.modal-content button[type="submit"] {
+  background-color: #635fc7;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-content button[type="submit"]:hover {
+  background-color: #5a55c2;
+}
+
+/* Close button */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Responsive for small devices */
+@media (max-width: 480px) {
+  .modal {
+    width: 90%;
+    right: 5%;
+    top: 70px;
+  }
+
+  #open-modal-btn {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    font-size: 24px;
+    border-radius: 50%;
+    text-align: center;
+  }
+
+  #open-modal-btn span {
+    display: none;
+  }
+
+  #open-modal-btn::before {
+    content: "+";
+    display: block;
+    font-weight: bold;
+  }
+}
+
+
 /******** Mobile ********/
 @media screen and (max-width: 576px) {
   .card-column-main {
